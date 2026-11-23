@@ -3,6 +3,130 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daniel Contreras</title>
+<meta name="description" content="Daniel Contreras is a creative strategist and email ghostwriter. Book a call to talk about your emails and your brand.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --bg:#ffffff; --fg:#121212; --text:#474645; --soft:#f4f2ef; --soft2:#ebe8e3;
+    --pill:#1f1f1e; --pill-fg:#ffffff;
+    --blue:#7db9ff; --orange:#ff5b37; --green:#33c26b; --yellow:#ffc84a;
+    --font:'Inter',-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141413; --fg:#f5f3ef; --text:#b4b1ab; --soft:#201f1e; --soft2:#2b2a28; --pill:#f5f3ef; --pill-fg:#141413; color-scheme:dark; }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--text); font:400 17px/1.55 var(--font); -webkit-font-smoothing:antialiased;
+    padding-left:max(16px,env(safe-area-inset-left,0px)); padding-right:max(16px,env(safe-area-inset-right,0px)); overflow-x:hidden; }
+  a { color:inherit; }
+  .wrap { max-width:1080px; margin:0 auto; }
+  nav { display:flex; justify-content:space-between; align-items:center; padding-block:20px; }
+  .brand { font-weight:600; color:var(--fg); letter-spacing:-.01em; display:flex; align-items:center; gap:8px; }
+  .brand i { width:14px; height:14px; border:2px solid var(--fg); border-radius:4px; display:inline-block; }
+  .pill { display:inline-flex; align-items:center; gap:8px; background:var(--pill); color:var(--pill-fg); padding:13px 24px; border-radius:999px; text-decoration:none; font-weight:500; font-size:16px; transition:transform .2s ease, opacity .2s ease; }
+  .pill:hover { transform:translateY(-1px); opacity:.88; }
+  .pill.small { padding:9px 18px; font-size:14px; }
+  .hero { position:relative; text-align:center; padding-block:84px 96px; }
+  h1, h2 { color:var(--fg); font-weight:500; letter-spacing:-.03em; margin:0; text-wrap:balance; }
+  h1 { font-size:clamp(40px,8vw,68px); line-height:1.1; max-width:11.5em; margin-inline:auto; }
+  .hero p { max-width:30em; margin:24px auto 32px; font-size:clamp(16px,2.2vw,19px); }
+  .hero .row { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; position:relative; z-index:2; }
+  .hero-copy { position:relative; z-index:2; }
+  .shape { position:absolute; z-index:1; animation:float 7s ease-in-out infinite; }
+  .s1 { width:150px; height:150px; background:var(--blue); border-radius:50% 50% 46% 54% / 55% 45% 55% 45%; left:-30px; top:70px; }
+  .s1::after { content:""; position:absolute; inset:38px; background:#4f9bff; border-radius:22px; transform:rotate(-8deg); }
+  .s2 { width:56px; height:56px; background:var(--yellow); border-radius:50%; left:11%; top:270px; animation-delay:-2s; }
+  .s3 { width:44px; height:44px; background:var(--orange); border-radius:50%; left:3%; top:340px; animation-delay:-4s; }
+  .s4 { width:130px; height:130px; background:var(--green); border-radius:48% 52% 55% 45% / 52% 48% 52% 48%; right:-20px; top:90px; animation-delay:-1s; }
+  .s4::after { content:""; position:absolute; left:34px; top:48px; width:12px; height:12px; background:var(--fg); border-radius:50%; box-shadow:34px 0 0 var(--fg); }
+  .s5 { width:70px; height:70px; background:var(--orange); border-radius:42% 58% 50% 50%; right:9%; top:290px; animation-delay:-3s; }
+  .s6 { width:34px; height:34px; background:var(--blue); border-radius:10px; transform:rotate(18deg); right:2%; top:360px; animation-delay:-5s; }
+  .s7 { width:90px; height:90px; background:var(--soft2); border-radius:50%; right:26%; top:20px; animation-delay:-2.5s; }
+  .s8 { width:110px; height:110px; background:var(--soft2); border-radius:50%; left:24%; top:10px; animation-delay:-1.5s; }
+  @keyframes float { 0%,100% { transform:translateY(0) rotate(0deg); } 50% { transform:translateY(-14px) rotate(3deg); } }
+  @media (max-width:760px) { .s2,.s3,.s5,.s6,.s7,.s8 { display:none; } .s1 { width:96px; height:96px; left:-26px; top:20px; } .s1::after { inset:24px; } .s4 { width:84px; height:84px; right:-18px; top:30px; } .s4::after { left:22px; top:30px; width:8px; height:8px; box-shadow:22px 0 0 var(--fg); } .hero { padding-top:110px; } }
+  section { padding-block:72px; }
+  .head { text-align:center; margin-bottom:44px; }
+  h2 { font-size:clamp(30px,5vw,44px); line-height:1.1; }
+  .grid { display:grid; gap:16px; }
+  .two { grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); }
+  .three { grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
+  .card { background:var(--soft); border-radius:28px; padding:36px 32px; min-width:0; transition:transform .3s ease; }
+  .card:hover { transform:translateY(-4px); }
+  .card h3 { margin:0 0 10px; color:var(--fg); font-size:22px; font-weight:500; letter-spacing:-.02em; }
+  .card p { margin:0; }
+  .dot { width:40px; height:40px; border-radius:50%; margin-bottom:28px; display:block; }
+  .step { font-weight:500; color:var(--fg); background:var(--bg); width:40px; height:40px; border-radius:50%; display:grid; place-items:center; margin-bottom:28px; }
+  .cta { background:var(--soft); border-radius:36px; text-align:center; padding:84px 24px; margin-block:48px 24px; position:relative; overflow:hidden; }
+  .cta p { margin:18px auto 30px; max-width:26em; font-size:19px; }
+  .cta .shape { animation-duration:9s; }
+  .c1 { width:70px; height:70px; background:var(--yellow); border-radius:50%; left:7%; top:36px; }
+  .c2 { width:50px; height:50px; background:var(--blue); border-radius:14px; right:9%; bottom:40px; transform:rotate(14deg); }
+  .cta h2, .cta p, .cta .pill { position:relative; z-index:2; }
+  @media (max-width:640px) { .c1,.c2 { display:none; } }
+  footer { padding-block:32px 48px; text-align:center; font-size:14px; }
+  .rise { animation:rise .8s cubic-bezier(.2,.7,.2,1) both; }
+  .rise.d1 { animation-delay:.08s; } .rise.d2 { animation-delay:.16s; }
+  @keyframes rise { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:none; } }
+  a:focus-visible { outline:2px solid var(--fg); outline-offset:3px; }
+  @media (prefers-reduced-motion: reduce) { .shape, .rise { animation:none; } html { scroll-behavior:auto; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <span class="brand"><i></i>Daniel Contreras</span>
+    <a class="pill small" href="#book">Book a call</a>
+  </nav>
+
+  <div class="hero">
+    <span class="shape s8"></span><span class="shape s7"></span>
+    <span class="shape s1"></span><span class="shape s2"></span><span class="shape s3"></span>
+    <span class="shape s4"></span><span class="shape s5"></span><span class="shape s6"></span>
+    <div class="hero-copy">
+      <h1 class="rise">Strategy that gets noticed. Emails that get read.</h1>
+      <p class="rise d1">I'm Daniel, a creative strategist and email ghostwriter. I help brands and founders turn their ideas into emails their audience actually opens and answers.</p>
+      <div class="row rise d2"><a class="pill" href="#book">Book a call</a></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="head"><h2>What I do</h2></div>
+    <div class="grid two">
+      <div class="card"><span class="dot" style="background:var(--blue)"></span><h3>Email ghostwriting</h3><p>Newsletters, launch sequences and one-to-one outreach written in your voice.</p></div>
+      <div class="card"><span class="dot" style="background:var(--orange)"></span><h3>Creative strategy</h3><p>Clear positioning, messaging and content direction so everything you publish points the same way.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><h2>How it works</h2></div>
+    <div class="grid three">
+      <div class="card"><span class="step">1</span><h3>We talk</h3><p>A short call to learn about you, your audience and your goals.</p></div>
+      <div class="card"><span class="step">2</span><h3>I write</h3><p>You get a plan and drafts that sound like you, only sharper.</p></div>
+      <div class="card"><span class="step">3</span><h3>You grow</h3><p>We refine based on what your readers respond to.</p></div>
+    </div>
+  </section>
+
+  <div class="cta" id="book">
+    <span class="shape c1"></span><span class="shape c2"></span>
+    <h2>Let's talk about your emails.</h2>
+    <p>Book a call and tell me what you're working on.</p>
+    <a class="pill" id="book-link" href="mailto:?subject=Book%20a%20call%20with%20Daniel">Book a call</a>
+  </div>
+
+  <footer>© 2026 Daniel Contreras</footer>
+</div>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Daniel Contreras — Creative Strategist & Email Ghostwriter</title>
 <meta name="description" content="Daniel Contreras is a creative strategist and email ghostwriter. Book a call to talk about your emails and your brand.">
 <style>
